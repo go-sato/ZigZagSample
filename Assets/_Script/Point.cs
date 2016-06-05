@@ -20,10 +20,13 @@ public class Point : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+		
 	}
 
 	void OnTriggerEnter2D(Collider2D other){
+
+		//エフェクト発生position
+		//Debug.Log (gameObject.transform.position);
 
 		if (other.gameObject.CompareTag ("Player")) {
 			comboManager.GetPoint ();

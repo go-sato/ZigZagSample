@@ -6,6 +6,7 @@ public class BadPoint : MonoBehaviour {
 	ScoreManager scoreManager;
 	PlaySound headSound;
 	PlaySound tailSound;
+	PlayerManager playerManager;
 
 	// Use this for initialization
 	void Start () {
@@ -13,6 +14,8 @@ public class BadPoint : MonoBehaviour {
 
 		headSound = GameObject.Find ("HeadSound").GetComponent<PlaySound> ();
 		tailSound = GameObject.Find ("TailSound").GetComponent<PlaySound> ();
+
+		playerManager = GameObject.Find ("Player").GetComponent<PlayerManager> ();
 	}
 	
 	// Update is called once per frame
@@ -25,6 +28,7 @@ public class BadPoint : MonoBehaviour {
 		if (other.gameObject.CompareTag ("Player")) {
 			//headSound.Play ();
 			//ロボにダメージ
+			playerManager.damage();
 		}
 
 		if (other.gameObject.CompareTag ("Trail")) {

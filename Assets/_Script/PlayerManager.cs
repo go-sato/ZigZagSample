@@ -5,6 +5,7 @@ public class PlayerManager : MonoBehaviour {
 
 	MoveObject moveObject;
 	public string state = "right";
+	int HP = 3;
 
 	// Use this for initialization
 	void Start () {
@@ -30,6 +31,13 @@ public class PlayerManager : MonoBehaviour {
 			moveObject.Move (0f);
 			state = "right";
 			break;
+		}
+	}
+
+	public void damage(){
+		HP--;
+		if (HP == 0) {
+			Destroy (gameObject);
 		}
 	}
 }
