@@ -13,7 +13,6 @@ public class ScoreManager : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		//score = player.GetComponent<PlayerController> ().score;
 		this.GetComponent<Text>().text = score.ToString();
 	}
 

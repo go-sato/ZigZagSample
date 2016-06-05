@@ -12,11 +12,11 @@ GameObject:
   - 114: {fileID: 11433902}
   - 50: {fileID: 5093094}
   - 58: {fileID: 5813870}
-  - 114: {fileID: 11453610}
   - 82: {fileID: 8269800}
+  - 114: {fileID: 11464878}
   m_Layer: 0
   m_Name: Trail
-  m_TagString: Untagged
+  m_TagString: Trail
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -151,7 +151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direction: -90
   speed: 2
---- !u!114 &11453610
+--- !u!114 &11464878
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -159,11 +159,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 140596}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93f1964ede8ed451792c5c9362f3c79a, type: 3}
+  m_Script: {fileID: 11500000, guid: d76569a7e10cb41afaeca27779e78944, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   lifeTime: 1
-  audioClip: {fileID: 8300000, guid: 1a39650a3a04e41fdbb393f6877c1853, type: 3}
 --- !u!212 &21281486
 SpriteRenderer:
   m_ObjectHideFlags: 1

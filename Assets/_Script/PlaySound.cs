@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class SoundManager : MonoBehaviour {
+public class PlaySound : MonoBehaviour {
 
 	public AudioClip audioClip;
 	AudioSource audioSource;
@@ -10,11 +10,14 @@ public class SoundManager : MonoBehaviour {
 	void Start () {
 		audioSource = gameObject.GetComponent<AudioSource>();
 		audioSource.clip = audioClip;
-		audioSource.Play();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 	
+	}
+
+	public void Play(){
+		audioSource.Play();
 	}
 }

@@ -5,11 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Point
-  - Block
-  - noBlock
-  - SpeedUp
   - BadPoint
-  - ' Trail'
+  - Trail
   layers:
   - Default
   - TransparentFX
