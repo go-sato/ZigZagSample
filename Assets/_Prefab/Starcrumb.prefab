@@ -13,7 +13,7 @@ GameObject:
   - 58: {fileID: 5801876}
   - 114: {fileID: 11466116}
   - 114: {fileID: 11496562}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Starcrumb
   m_TagString: Point
   m_Icon: {fileID: 0}

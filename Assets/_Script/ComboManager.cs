@@ -4,12 +4,12 @@ using UnityEngine.UI;
 
 public class ComboManager : MonoBehaviour {
 
-	int comboCount = 0;
-	float comboSpan = 0.0f;
-	float comboStart = 0.0f;
-	public float threshold = 0.0f;
-
+	int comboCount = 0;  //総コンボ数
+	float comboSpan = 0.0f;  //コンボの間隔
+	float comboStart = 0.0f;  //前のPointに当たった時間
+	public float threshold = 0.0f;  //コンボとする間隔の閾値
 	float time = 0.0f;
+	public GameObject rotationTrail;
 
 	// Use this for initialization
 	void Start () {
@@ -32,6 +32,10 @@ public class ComboManager : MonoBehaviour {
 			comboCount = 0;
 			comboSpan = 0.0f;
 		}
+
+		if (comboCount == 3) {
+			AllGetOn ();
+		}
 	}
 
 	public void GetPoint(){
@@ -48,5 +52,15 @@ public class ComboManager : MonoBehaviour {
 				comboSpan = 0.0f;
 			}
 		}
+	}
+
+	void AllGetOn(){
+		rotationTrail.SetActive (true);
+		StartCoroutine ("AllGetOff");
+	}
+
+	private IEnumerator AllGetOff(){
+		yield return new WaitForSeconds (2.0f);  
+		rotationTrail.SetActive (false);
 	}
 }

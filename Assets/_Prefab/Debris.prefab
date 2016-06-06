@@ -13,7 +13,7 @@ GameObject:
   - 58: {fileID: 5821370}
   - 114: {fileID: 11458506}
   - 114: {fileID: 11496370}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Debris
   m_TagString: BadPoint
   m_Icon: {fileID: 0}
