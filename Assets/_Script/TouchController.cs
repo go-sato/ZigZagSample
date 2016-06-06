@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class TouchController : MonoBehaviour {
 
@@ -15,7 +16,11 @@ public class TouchController : MonoBehaviour {
 
 		//タッチ入力
 		if (Input.touchCount > 0)
-		{
+		{	
+			if (Input.touchCount == 2) {
+				SceneManager.LoadScene ("Main");
+			}
+			
 			Touch touch = Input.GetTouch(0);
 			if(touch.phase == TouchPhase.Began)
 			{
