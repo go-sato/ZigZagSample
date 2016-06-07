@@ -163,6 +163,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeTime: 1
+  state: 
+  tailL: {fileID: 21300000, guid: aaa25c941efd042d6a8ac7d112f450bc, type: 3}
+  tailR: {fileID: 21300000, guid: 723e885663eb1452eb3cd8806e2bc9eb, type: 3}
 --- !u!212 &21281486
 SpriteRenderer:
   m_ObjectHideFlags: 1
