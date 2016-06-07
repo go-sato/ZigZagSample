@@ -12,7 +12,6 @@ GameObject:
   - 114: {fileID: 11433902}
   - 50: {fileID: 5093094}
   - 58: {fileID: 5813870}
-  - 82: {fileID: 8269800}
   - 114: {fileID: 11464878}
   m_Layer: 0
   m_Name: Trail
@@ -64,80 +63,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.21428572
---- !u!82 &8269800
-AudioSource:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 140596}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
 --- !u!114 &11433902
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -164,8 +89,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lifeTime: 1
   state: 
-  tailL: {fileID: 21300000, guid: aaa25c941efd042d6a8ac7d112f450bc, type: 3}
-  tailR: {fileID: 21300000, guid: 723e885663eb1452eb3cd8806e2bc9eb, type: 3}
+  tailL: {fileID: 21300000, guid: 7f9329fce2f884eedabc4dd4fcafbaee, type: 3}
+  tailR: {fileID: 21300000, guid: 463ad64a18f0d43a4bb412f8f0771212, type: 3}
 --- !u!212 &21281486
 SpriteRenderer:
   m_ObjectHideFlags: 1

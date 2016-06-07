@@ -8,13 +8,17 @@ public class PlayerManager : MonoBehaviour {
 	int HP = 3;
 
 	SpriteRenderer mainSpriteRenderer;
-	public Sprite playerL;
-	public Sprite playerR;
+	public Sprite headL;
+	public Sprite headR;
+	SpriteRenderer earSpriteRenderer;
+	public Sprite earL;
+	public Sprite earR;
 
 	// Use this for initialization
 	void Start () {
 		moveObject = GetComponent<MoveObject> ();
 		mainSpriteRenderer = GetComponent<SpriteRenderer> ();
+		earSpriteRenderer = GameObject.Find ("Ear").GetComponent<SpriteRenderer>();
 		//transform.rotation = Quaternion.Euler(0, 0, -20);
 	}
 	
@@ -30,13 +34,15 @@ public class PlayerManager : MonoBehaviour {
 	public void ChangeDirection(){
 		switch (state) {
 		case "right":
-			mainSpriteRenderer.sprite = playerL;
+			mainSpriteRenderer.sprite = headL;
+			earSpriteRenderer.sprite = earL;
 //			transform.rotation = Quaternion.Euler(0, 0, 40);
 			moveObject.Move (180);
 			state = "left";
 			break;
 		case "left":
-			mainSpriteRenderer.sprite = playerR;
+			mainSpriteRenderer.sprite = headR;
+			earSpriteRenderer.sprite = earR;
 //			transform.rotation = Quaternion.Euler(0, 0, -40);
 			moveObject.Move (0f);
 			state = "right";
