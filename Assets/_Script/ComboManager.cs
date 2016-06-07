@@ -60,7 +60,7 @@ public class ComboManager : MonoBehaviour {
 	}
 
 	private IEnumerator AllGetOff(){
-		yield return new WaitForSeconds (2.0f);  
+		yield return new WaitForSeconds (0.8f);  
 		rotationTrail.SetActive (false);
 	}
 }
