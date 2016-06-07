@@ -11,7 +11,7 @@ public class SpawnTrail : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 		Instantiate (spawnObject, transform.position, Quaternion.identity);
 	}
 }
