@@ -1191,7 +1191,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 391410508}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4300e2b6d81c54fbca26fb96e0fb011b, type: 3}
   m_Name: 
@@ -3133,6 +3133,51 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 450538, guid: 5324418086583498b840d11ae3510d0d, type: 2}
   m_PrefabInternal: {fileID: 529774256}
+--- !u!1 &1422472781
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 182564, guid: 2f9c53179040247baae2bfe13231c286, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1422472782}
+  - 114: {fileID: 1422472783}
+  m_Layer: 0
+  m_Name: Tail
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1422472782
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 488036, guid: 2f9c53179040247baae2bfe13231c286, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1422472781}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.91, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+--- !u!114 &1422472783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11473804, guid: 2f9c53179040247baae2bfe13231c286,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1422472781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d149cbe060d5844b88509d047de8f89b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trail: {fileID: 140596, guid: a5ba73c943e244398a5eb2436783f22c, type: 2}
+  trailSize: 40
+  trailEnd: {fileID: 195636, guid: 34ea3b23de10a4da0a40e29ce592b019, type: 2}
+  tailL: {fileID: 21300000, guid: 7f9329fce2f884eedabc4dd4fcafbaee, type: 3}
+  tailR: {fileID: 21300000, guid: 463ad64a18f0d43a4bb412f8f0771212, type: 3}
 --- !u!4 &1431606479 stripped
 Transform:
   m_PrefabParentObject: {fileID: 450538, guid: 5324418086583498b840d11ae3510d0d, type: 2}

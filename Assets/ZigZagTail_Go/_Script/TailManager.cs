@@ -35,6 +35,7 @@ public class TailManager : MonoBehaviour {
 
 		for (int i = 0; i < players.Length; i++) {
 			startPos [i] = players [i].transform.position;
+			players[i].GetComponent<SpriteRenderer>().sortingOrder = i + 1;
 		}
 	}
 
